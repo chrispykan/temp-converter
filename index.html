@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,24 @@
         <link rel="stylesheet" href="">
         <script src="./scripts/main.js" defer></script>
     </head>
+      
     <body>
-       <h1>Temperature Converter</h1>
-        <label>Farenheit</label>
-        <input id="farenheit-input" type="number" placeholder="Type a temp in °F"/>
-        <p>The Temperature in Cencius is °<div id="celcius-output"></div></p>
-        <script src="" async defer></script>
+        <h1>Farenheit Temperature Converter</h1>
+        <form>
+            <label>Temperature in Farenheit: </label>
+            <input name="farenheitInput" id="farenheitInput" type="number" value " "/>
+        
+            <button id="convertBtn" onclick="convert()">Convert</button>
+        
+            <p>The Temperature in Celcius is °
+                <div id="celciusOutput"></div>
+            </p>
+        
+            <p>The Temperature in Kelvin is
+                <div id="kelvinOutput"></div>
+            </p>
+        </form>
     </body>
+      
 </html>
 
